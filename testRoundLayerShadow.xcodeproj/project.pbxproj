@@ -14,6 +14,8 @@
 		433F70261B3EBD7100DFA9CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433F70251B3EBD7100DFA9CA /* Images.xcassets */; };
 		433F70291B3EBD7100DFA9CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433F70271B3EBD7100DFA9CA /* LaunchScreen.xib */; };
 		433F70351B3EBD7100DFA9CA /* testRoundLayerShadowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433F70341B3EBD7100DFA9CA /* testRoundLayerShadowTests.m */; };
+		433F704D1B3F837600DFA9CA /* SampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 433F704B1B3F837600DFA9CA /* SampleTableViewCell.m */; };
+		433F704E1B3F837600DFA9CA /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433F704C1B3F837600DFA9CA /* SampleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		433F702E1B3EBD7100DFA9CA /* testRoundLayerShadowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testRoundLayerShadowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		433F70331B3EBD7100DFA9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433F70341B3EBD7100DFA9CA /* testRoundLayerShadowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testRoundLayerShadowTests.m; sourceTree = "<group>"; };
+		433F704A1B3F837600DFA9CA /* SampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell.h; sourceTree = "<group>"; };
+		433F704B1B3F837600DFA9CA /* SampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell.m; sourceTree = "<group>"; };
+		433F704C1B3F837600DFA9CA /* SampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +86,11 @@
 		433F70171B3EBD7100DFA9CA /* testRoundLayerShadow */ = {
 			isa = PBXGroup;
 			children = (
+				433F70501B3FE9EC00DFA9CA /* ViewControllers */,
+				433F704F1B3FE9AD00DFA9CA /* Views */,
 				433F701C1B3EBD7100DFA9CA /* AppDelegate.h */,
 				433F701D1B3EBD7100DFA9CA /* AppDelegate.m */,
-				433F701F1B3EBD7100DFA9CA /* ViewController.h */,
-				433F70201B3EBD7100DFA9CA /* ViewController.m */,
-				433F70221B3EBD7100DFA9CA /* Main.storyboard */,
 				433F70251B3EBD7100DFA9CA /* Images.xcassets */,
-				433F70271B3EBD7100DFA9CA /* LaunchScreen.xib */,
 				433F70181B3EBD7100DFA9CA /* Supporting Files */,
 			);
 			path = testRoundLayerShadow;
@@ -117,6 +120,27 @@
 				433F70331B3EBD7100DFA9CA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		433F704F1B3FE9AD00DFA9CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				433F70221B3EBD7100DFA9CA /* Main.storyboard */,
+				433F70271B3EBD7100DFA9CA /* LaunchScreen.xib */,
+				433F704A1B3F837600DFA9CA /* SampleTableViewCell.h */,
+				433F704B1B3F837600DFA9CA /* SampleTableViewCell.m */,
+				433F704C1B3F837600DFA9CA /* SampleTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		433F70501B3FE9EC00DFA9CA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				433F701F1B3EBD7100DFA9CA /* ViewController.h */,
+				433F70201B3EBD7100DFA9CA /* ViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433F704E1B3F837600DFA9CA /* SampleTableViewCell.xib in Resources */,
 				433F70241B3EBD7100DFA9CA /* Main.storyboard in Resources */,
 				433F70291B3EBD7100DFA9CA /* LaunchScreen.xib in Resources */,
 				433F70261B3EBD7100DFA9CA /* Images.xcassets in Resources */,
@@ -220,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				433F70211B3EBD7100DFA9CA /* ViewController.m in Sources */,
+				433F704D1B3F837600DFA9CA /* SampleTableViewCell.m in Sources */,
 				433F701E1B3EBD7100DFA9CA /* AppDelegate.m in Sources */,
 				433F701B1B3EBD7100DFA9CA /* main.m in Sources */,
 			);

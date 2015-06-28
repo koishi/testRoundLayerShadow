@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SampleTableViewCell.h"
 
 @interface ViewController ()
 
@@ -14,12 +15,31 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+
+  [self addCellView];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)addCellView
+{
+  SampleTableViewCell *cell = (SampleTableViewCell*)[self uiViewLoadWithNib:@"SampleTableViewCell"];
+
+  cell.lineView.hidden = YES;
+  
+  [self.view addSubview:cell];
+}
+
+- (UIView *)uiViewLoadWithNib:(NSString*)nibNamed
+{
+  NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:nibNamed owner:self options:nil];
+  UIView *aView = nibObjects[0];
+  return aView;
+}
+
+- (void)didReceiveMemoryWarning
+{
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
 }
